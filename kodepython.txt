@@ -1,0 +1,101 @@
+ => rstrip() = untuk menghapus whitespace pada sebelah kanan atau akhir string
+    contoh: print("Dicoding       ".rstrip())
+ => intrip() = untuk menghapus whitespacepada sebelah kiri atau wal string
+    contoh: print("           Dicoding".lstrip())
+ => strip() = untuk menghapus whitespace pada bagian awal dan akhir string
+    contoh: print("         Dicoding          ".strip())
+
+    Contoh menghilangkan karakter selain whitespace:
+    kata = 'HelloHelloHelloHaiHelloHelloAndryan'
+    print(kata.strip('Hello'))
+ => endswitch() = untuk menemukan suatu kata pada akhir string
+                  Metode ini juga mengembalikan nilai True jika menemukannya, sedangkan jika tidak menemukan kata yang diinginkan, nilai False dikembalikan.
+    contoh : print('Hello Andryan'.endswitch('Hello'))
+             output: False
+
+# Memisah dan Menggabungkan string
+ => join() = contoh : print(' '.join(['Dicoding','Indonesia', '!']))
+
+                        """
+                        Output:
+                        Dicoding Indonesia !
+                        """
+
+ => split() = bertujuan untuk memisahkan kata/substring berdasarkan delimiter.
+        contoh : print('Hello Andryan !'.split())
+    
+# Mengganti Element string  
+ => replace() = contoh: 
+                        string = 'Ayo belajar biar pintar'
+                        print(string.replace('pintar','ga goblok'))
+
+ => isupper() = Mengembalikan nilai True jika semua huruf dalam string adalah huruf kapital(uppercase). Sebaliknya, jika ada satu huruf saj yang kecil, Nilai False akan dikembalikan
+        contoh : kata = "ANDRYAN"
+                 print(kata.isupper()) == True
+
+                 kata2 = 'andryan'
+                 print(kata2.isupper()) == False
+ => islower() = Mengembalikan nilai true jika semuia huruf dalam string adalah huruf kecil(lowercase)
+        contoh : kata = "andryan"
+                 print(kata.islower()) == true
+ 
+                 kata2 = 'ANDRYAN'
+                 print(kata2.islower()) == False
+
+ => isalpha() = Metode ini mengembalikan nilai True jika semua karakter dalam string adalah huruf alfabet. Jika ada satu huruf lain yang bukan alfabet, seperti angka, nilai False akan dikembalikan.
+ => isalnum() = Metode isalnum() mengembalikan nilai True jika karakter dalam string adalah alfanumerik, yaitu hanya huruf atau hanya angka atau berisi keduanya. Jika tidak, nilai False akan dikembalikan.
+ => isdecimal() = Metode isdecimal() akan mengembalikan nilai True jika karakter dalam string berisi hanya angka/numerik. Jika tidak, nilai False akan dikembalikan.
+ => isspace() = Metode isspace() akan mengembalikan nilai True jika string hanya berisi whitespace, seperti spasi, tab, newline, atau karakter whitespace lainnya.
+ => istitle() = Metode istitle() mengembalikan nilai True jika string berisi huruf kapital pada setiap kata pertamanya. Jika tidak, nilai False dikembalikan.
+
+
+# Formatting pada string
+ => zfill() = Metode zfill() bertujuan untuk menambahkan nilai nol (0) di depan sebuah string dengan panjang tertentu. Tujuan dari metode ini adalah membantu untuk memastikan bahwa sebuah angka atau nilai memiliki panjang tetap, terutama ketika ingin menyimpan nilai dalam format yang konsisten.
+        contoh: teks = 'Code'
+                tambah_number = teks.zfill(5)
+                print(tambah_number)
+
+ => rjust() = Metode rjust() berguna untuk merapikan pencetakan teks. Dengan metode rjust() ini, Anda dapat membuat teks menjadi rata kanan sehingga tampilannya lebih rapi
+        contoh: print('Dicoding'.rjust(20))
+
+                """
+                Output:
+                            Dicoding
+
+                """
+
+                print('Dicoding'.rjust(20, '!'))
+
+                """
+                Output:
+                !!!!!!!!!!!!Dicoding
+                """
+ => Ijust() = Selanjutnya adalah metode ljust(), metode ini adalah kebalikan dari metode rjust() yang bertujuan untuk membuat teks menjadi rata kiri.
+        contoh: print('Dicoding'.ljust(20))
+
+                """
+                Output:
+                Dicoding            '
+                """
+ => center() = Metode center() menjadikan teks rata tengah. Metode ini akan menambahkan whitespace di sebelah kiri dan kanan secara default. Anda juga bisa mengganti whitespace tersebut dengan karakter lain.
+        contoh: print('Dicoding'.center(10, '-'))
+
+                    """
+                    Output:
+                    -Dicoding-
+
+                    """
+# Operasi pada List, Set, dan String
+  len()
+
+ => Fungsi len() = bertujuan untuk menghitung panjang atau banyaknya elemen dari list, set, dan string. Khusus pada string, program akan menghitung jumlah karakternya.
+ => min() dan max() = Selain menghitung panjang atau banyaknya elemen, Anda juga dapat mengetahui berapa nilai minimum dan maksimum dari suatu list menggunakan fungsi min() dan max().
+ => Count = Fungsi count() digunakan untuk mengetahui berapa kali suatu objek muncul dalam list.
+ => In dan Not In = In dan not in merupakan operator yang diperuntukkan untuk mengetahui nilai atau objek yang ada dalam list. Anda bisa menggunakan operator ini untuk memastikan suatu nilai ada dalam list bahkan dalam string. Operator in dan not in akan mengembalikan nilai boolean True atau False. 
+
+# Memberikan Nilai untuk Multiple Variable
+        data = ['shirt', 'white', 'L']
+        apparel = data[0]
+        color = data[1]
+        size = data[2]
+    Dalam kode di atas, Anda mengakses indeks pertama pada variabel "data" yang merupakan list, lalu menyimpannya pada variabel baru bernama "apparel". Lalu, berlaku seterusnya, Anda mengakses indeks kedua serta ketiga dan menyimpannya pada variabel baru, masing-masing bernama "color" dan "size".

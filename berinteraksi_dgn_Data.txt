@@ -1,0 +1,31 @@
+=> Abstraksi Data
+  Ambstraksi Data merupakan kemampuanAnda untuk mengerti konteks dan mempresemtasikannya menjadi bentuk lain sesuai dengan konteks masalahnya
+  contoh : 60, angka 60 mungkin hanya bernilai angka tersebut jika ditambahka dengan satuan, namun jika diubah menjadi 60 km/h maka angka tersebut akan memiliki makna lain
+
+=> Data Typing
+  - Deklarasi dan inisialisasi
+    Deklarasi merujuk pada pembuatan variable dengan menentukan tipe data dan nama variablenya
+    contoh deklarasi di bahasa c/C++ : int age;
+                                       float salery;
+    Sementara inisialisasi merujuk kepada pemberian nilai awal pada variabel yang sebelumnya telah dideklarasikan                                  
+    contoh inisialisasi di bahasa Python : age = 20;
+                                          salery = 1000.00;
+
+     Python merupakan bahasa pemrograman yang bersifat dynamic typing, artinya kita tidak perlu mendeklarasikan tipe data dari sebuah variabel, python akan secara otomatis menentukan tipe data dari sebuah variabel berdasarkan nilai yang diberikan pada variabel tersebut
+     Python jga merupakan bahasa pemrograman yang menerapkan loosely type, Artinya anda tidak perlu mendeklarasikan tipe data variable secara eksplisit
+
+=> Tipe Data
+   - Tipe data primitif
+     Tipe data primitif merupakan tipe data yang sudah ada di dalam bahasa pemrograman itu sendiri.
+     Tipe data ini menyimpan single value
+     Contoh tipe data primitif : int, float, char, boolean, double, long, short, byte, list, tuple
+      -tipe Data list
+        tipe data list seperti array dan index dimulai dari 0 dan bersifat mutable atau bisa dirubah nilainya
+        adapun konsep Slicing yaitu merujuk pada pengambilan data berdasarkan indeks dari rentang tertentu
+        sequence[start:stop:step]
+        start merupakan indeks pertama yang diambil.Stop merupakan indeks terakhir yang ingin anda ambil. step merupakan jumlah elemen yang ingin anda lewati di antara setiap elemen slice, Secara default, nilai step adalah 1
+        contoh : list = [1,2,3,4,5]
+                 list[0] = 1
+                 list[1:3] = [2,3]
+      -tipe Data tuple
+        tipe data tuple mirip dengan list, namun berbeda dengan list, tuple bersifat immutable, artinya setelah tuple dibuat
