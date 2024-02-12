@@ -1,0 +1,57 @@
+# Fundamental Array
+    Array adalah salah satu jenis dari struktur data linear dan terdiri daari kumpulan elemen bertipe data sama dengan indeks yang berurutan atau linear
+
+    Penjelasan dari struktur array:
+    1. Indeks-Indeks(indices): Kumpulan indeks yang keseluruhan dari kumpulan indeks tersebut disebut sebagai array
+    2. Indeks Pertama: Indeks Pertama array yang selalu dimulai dari 0
+    3. Element: Nilai yang berada dalam suatu indeks
+    4. Array length: Panjang dari suatu array
+
+    Cara penggunaan array:
+
+    1.Menggunakan list
+        ex :
+        array = ['Andryan','Rahmat', 4,2,True]
+        print(array)
+
+        x = [i in i range(101)]
+        print(x)
+
+    2. Menggunakan Library Array
+        ex:
+        import array
+
+        x = array.array('hehe', 5, False)
+        print(x)
+
+#Implementasi Array dengan Python
+    1.Mendefinisikan isi array 
+        contoh struktur mendeklarasikan variable array dengan mendefinisikan isi array secara langsung
+        > https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:5d332c9b0c9a0345095dc591754e527420230810145559.jpeg
+        Dari struktur tersebut, <nama-var> merupakan nama variabel array yang dideklarasikan sebanyak n dengan elemen-elemennya adalah <val0>, <val1>, <val2>, … , <valn-1>. Perlu diingat bahwa elemen tersebut terurut berdasarkan indeks dari 0 hingga n-1. 
+
+    2.Mendefinisikan Nilai default
+        Cara ini dilakukan jika kita tidak mengetahui nilai yang diberikan.Kita dapat memberikan nilai default terlebih dahulu sebagai upaya untuk memberikan nilai awal
+        Berikut adalah contoh struktur mendeklarasikan variabel array dengan mendefinisikan nilai default
+        > https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:45da8725f0b0d44e09e192a5873275cb20230810145559.jpeg
+        
+        Berikut adalah penjelasan lebih detail terkait struktur tersebut.
+
+        a. <nama-var> merupakan variabel yang Anda deklarasikan.
+        b. <default-val> merupakan nilai default yang Anda definisikan. Umumnya, programmer akan menggunakan nilai di luar range yang telah disepakati sebagai nilai default. Misalnya jika range nilai yang disepakati seharusnya 1 hingga 10, nilai default bisa kita definisikan dengan 0. 
+        c. <n> merupakan ukuran panjangnya array.
+
+
+# Pemrosesan Sekuensial pada array
+    Pemrosesan sekuensial adalah sebuah pemrosesan setiap elemen array yang dimulai dari elemen pada indeks terkecil hingga terbesar
+    Premosesan sekuensial lebih sering menggunakan pengulangawn (loop/iterasi) dalam setiap pemrosesannya
+
+    Hal yang perlu diperhatikan:
+    1. Setiuap elemen array diakses secara langsung melalui indeksnya(metode indexing)
+    2. Elemen pertama (first Elemen) adalah elemen array dengan indeks terkecil yang selalu dimulai dari 0
+    3. Elemen selanjutnya (next element) dicapai melalui suksesor indeks
+    4. Kondisi berhenti dicapai jika ideks yang diproses adalah indeks 
+       terbesar yang sudah terdefinisi
+    5. Suatu array tidak boleh kosong, minimal memiliki satu elemne di dalamnya
+
+
